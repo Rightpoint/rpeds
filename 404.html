@@ -52,22 +52,112 @@
     }
   </style>
   <link rel="stylesheet" href="/styles/lazy-styles.css">
+  <script nonce="aem" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <style>
+    #three-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+  </style>
 </head>
 
 <body>
   <header></header>
+  <div id="three-container"></div>
   <main class="error">
     <div class="section">
       <svg viewBox="1 0 38 18" class="error-number">
         <text x="0" y="17">404</text>
       </svg>
-      <h2 class="error-message">Page Not Found</h2>
+      <h2 class="error-message">Page Not Found!</h2>
       <p class="button-container">
         <a href="/" class="button secondary error-button-home">Go home</a>
       </p>
     </div>
   </main>
   <footer></footer>
+  <script nonce="aem">
+    (function() {
+      const container = document.getElementById('three-container');
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      container.appendChild(renderer.domElement);
+
+      const shapes = [];
+      const geometries = [
+        new THREE.TetrahedronGeometry(0.5),
+        new THREE.OctahedronGeometry(0.4),
+        new THREE.IcosahedronGeometry(0.35),
+        new THREE.TorusGeometry(0.3, 0.1, 8, 16)
+      ];
+
+      for (let i = 0; i < 20; i++) {
+        const geometry = geometries[Math.floor(Math.random() * geometries.length)];
+        const material = new THREE.MeshBasicMaterial({
+          color: new THREE.Color().setHSL(Math.random() * 0.2 + 0.55, 0.7, 0.6),
+          wireframe: true,
+          transparent: true,
+          opacity: 0.6
+        });
+        const mesh = new THREE.Mesh(geometry, material);
+
+        mesh.position.set(
+          (Math.random() - 0.5) * 15,
+          (Math.random() - 0.5) * 10,
+          (Math.random() - 0.5) * 10 - 5
+        );
+        mesh.rotation.set(
+          Math.random() * Math.PI,
+          Math.random() * Math.PI,
+          Math.random() * Math.PI
+        );
+        mesh.userData = {
+          rotationSpeed: {
+            x: (Math.random() - 0.5) * 0.02,
+            y: (Math.random() - 0.5) * 0.02,
+            z: (Math.random() - 0.5) * 0.02
+          },
+          floatSpeed: Math.random() * 0.5 + 0.5,
+          floatOffset: Math.random() * Math.PI * 2
+        };
+
+        shapes.push(mesh);
+        scene.add(mesh);
+      }
+
+      camera.position.z = 5;
+
+      function animate(time) {
+        requestAnimationFrame(animate);
+
+        shapes.forEach((shape) => {
+          shape.rotation.x += shape.userData.rotationSpeed.x;
+          shape.rotation.y += shape.userData.rotationSpeed.y;
+          shape.rotation.z += shape.userData.rotationSpeed.z;
+          shape.position.y += Math.sin(time * 0.001 * shape.userData.floatSpeed + shape.userData.floatOffset) * 0.002;
+        });
+
+        renderer.render(scene, camera);
+      }
+
+      window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      });
+
+      animate(0);
+    })();
+  </script>
 </body>
 
 </html>
