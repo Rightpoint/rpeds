@@ -1,0 +1,15 @@
+{
+  "mappings": [
+    "/content/rpeds-eds-ue/:/",
+    "/content/rpeds-eds-ue/headers:/.helix/headers.json",
+    "/content/rpeds-eds-ue/metadata:/metadata.json",
+    "/content/rpeds-eds-ue/configs:/configs.json",
+    "/content/rpeds-eds-ue/configs-dev:/configs-dev.json",
+    "/content/rpeds-eds-ue/configs-stage:/configs-stage.json",
+    "/content/rpeds-eds-ue/placeholders:/placeholders.json",
+    "/content/rpeds-eds-ue/products/default/metadata:/products/default/metadata.json"
+  ],
+  "includes": [
+    "/content/rpeds-eds-ue/"
+  ]
+}
