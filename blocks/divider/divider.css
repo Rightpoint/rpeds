@@ -1,0 +1,107 @@
+.divider {
+  padding: 24px 0;
+}
+
+.divider .divider-line {
+  border: none;
+  border-top: 1px solid var(--border-color, #dadada);
+  margin: 0;
+}
+
+.divider .divider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.divider .divider-wrapper .divider-line {
+  flex: 1;
+}
+
+.divider .divider-text {
+  font-size: 0.9rem;
+  color: var(--text-color, #666);
+  white-space: nowrap;
+}
+
+/* Thick variant */
+.divider.thick .divider-line {
+  border-top-width: 3px;
+}
+
+/* Dashed variant */
+.divider.dashed .divider-line {
+  border-top-style: dashed;
+}
+
+/* Dotted variant */
+.divider.dotted .divider-line {
+  border-top-style: dotted;
+}
+
+/* Colored variant */
+.divider.colored .divider-line {
+  border-top-color: var(--link-color, #035fe6);
+}
+
+/* Gradient variant */
+.divider.gradient .divider-line {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--link-color, #035fe6), transparent);
+}
+
+/* Double line variant */
+.divider.double .divider-line {
+  border-top: 1px solid var(--border-color, #dadada);
+  border-bottom: 1px solid var(--border-color, #dadada);
+  height: 4px;
+}
+
+/* With icon/symbol variants */
+.divider.star .divider-text::before {
+  content: '★';
+}
+
+.divider.dot .divider-text::before {
+  content: '•';
+}
+
+/* Spacing variants */
+.divider.small {
+  padding: 12px 0;
+}
+
+.divider.large {
+  padding: 48px 0;
+}
+
+/* Full width variant */
+.divider.full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+/* Short variant (centered, not full width) */
+.divider.short .divider-line {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Left aligned text */
+.divider.left .divider-wrapper {
+  justify-content: flex-start;
+}
+
+.divider.left .divider-wrapper .divider-line:first-child {
+  display: none;
+}
+
+/* Right aligned text */
+.divider.right .divider-wrapper {
+  justify-content: flex-end;
+}
+
+.divider.right .divider-wrapper .divider-line:last-child {
+  display: none;
+}

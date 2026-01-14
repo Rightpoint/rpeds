@@ -1,0 +1,139 @@
+.cta {
+  padding: 48px;
+  background-color: var(--link-color, #035fe6);
+  color: #fff;
+  border-radius: 8px;
+}
+
+.cta .cta-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.cta .cta-content {
+  flex: 1;
+}
+
+.cta .cta-content h1,
+.cta .cta-content h2,
+.cta .cta-content h3,
+.cta .cta-content h4 {
+  color: #fff;
+  margin: 0 0 16px;
+}
+
+.cta .cta-content p {
+  margin: 0 0 24px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.cta .cta-button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.cta .cta-button-primary {
+  background-color: #fff;
+  color: var(--link-color, #035fe6);
+}
+
+.cta .cta-button-primary:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.cta .cta-button-secondary {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.cta .cta-button-secondary:hover {
+  background-color: rgb(255 255 255 / 10%);
+}
+
+.cta .cta-image {
+  flex-shrink: 0;
+  max-width: 40%;
+}
+
+.cta .cta-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Centered variant */
+.cta.centered {
+  text-align: center;
+}
+
+.cta.centered .cta-wrapper {
+  flex-direction: column;
+}
+
+.cta.centered .cta-image {
+  max-width: 60%;
+}
+
+/* Dark variant */
+.cta.dark {
+  background-color: var(--dark-color, #1a1a1a);
+}
+
+/* Light variant */
+.cta.light {
+  background-color: var(--light-color, #f5f5f5);
+  color: var(--text-color, #333);
+}
+
+.cta.light h1,
+.cta.light h2,
+.cta.light h3,
+.cta.light h4 {
+  color: var(--text-color, #333);
+}
+
+.cta.light .cta-button-primary {
+  background-color: var(--link-color, #035fe6);
+  color: #fff;
+}
+
+.cta.light .cta-button-secondary {
+  border-color: var(--link-color, #035fe6);
+  color: var(--link-color, #035fe6);
+}
+
+/* Full-width variant */
+.cta.full-width {
+  border-radius: 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 64px calc(50vw - 50%);
+}
+
+/* Responsive */
+@media (width <= 768px) {
+  .cta {
+    padding: 32px 24px;
+  }
+
+  .cta .cta-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta .cta-image {
+    max-width: 100%;
+    order: -1;
+  }
+}

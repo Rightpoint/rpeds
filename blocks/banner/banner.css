@@ -1,0 +1,134 @@
+.banner {
+  padding: 12px 24px;
+  background-color: var(--link-color, #035fe6);
+  color: #fff;
+}
+
+.banner .banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.banner .banner-content {
+  text-align: center;
+}
+
+.banner .banner-content p {
+  margin: 0;
+}
+
+.banner .banner-content a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.banner .banner-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.banner .banner-button {
+  padding: 8px 16px;
+  background-color: #fff;
+  color: var(--link-color, #035fe6);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease;
+}
+
+.banner .banner-button:hover {
+  background-color: #f0f0f0;
+}
+
+.banner .banner-close {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.banner .banner-close:hover {
+  opacity: 1;
+}
+
+/* Full width variant */
+.banner.full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+/* Sticky top variant */
+.banner.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Warning variant */
+.banner.warning {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.banner.warning .banner-button {
+  background-color: #333;
+  color: #fff;
+}
+
+.banner.warning .banner-content a {
+  color: #333;
+}
+
+/* Error variant */
+.banner.error {
+  background-color: #dc3545;
+}
+
+/* Success variant */
+.banner.success {
+  background-color: #28a745;
+}
+
+/* Info variant */
+.banner.info {
+  background-color: #17a2b8;
+}
+
+/* Dark variant */
+.banner.dark {
+  background-color: #1a1a1a;
+}
+
+/* Gradient variant */
+.banner.gradient {
+  background: linear-gradient(90deg, var(--link-color, #035fe6) 0%, #6610f2 100%);
+}
+
+@media (width <= 768px) {
+  .banner .banner-wrapper {
+    flex-direction: column;
+    padding-right: 32px;
+  }
+
+  .banner .banner-close {
+    top: 8px;
+    right: 8px;
+    transform: none;
+  }
+}

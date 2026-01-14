@@ -1,0 +1,42 @@
+.accordion details {
+  border: 1px solid var(--border-color, #dadada);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.accordion summary {
+  padding: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--background-color, #fff);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: transform 0.2s ease;
+}
+
+.accordion details[open] summary::after {
+  content: '-';
+}
+
+.accordion .accordion-content {
+  padding: 16px;
+  border-top: 1px solid var(--border-color, #dadada);
+  background-color: var(--light-color, #f5f5f5);
+}
+
+.accordion details[open] {
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}

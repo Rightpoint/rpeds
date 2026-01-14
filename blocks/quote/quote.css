@@ -1,0 +1,92 @@
+.quote blockquote {
+  margin: 0;
+  padding: 24px 32px;
+  border-left: 4px solid var(--link-color, #035fe6);
+  background-color: var(--light-color, #f5f5f5);
+  border-radius: 0 8px 8px 0;
+}
+
+.quote .quote-text {
+  margin: 0 0 16px;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text-color, #333);
+}
+
+.quote .quote-text::before {
+  content: '\201C';
+  font-size: 2rem;
+  color: var(--link-color, #035fe6);
+  margin-right: 4px;
+}
+
+.quote .quote-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.quote .quote-image {
+  flex-shrink: 0;
+}
+
+.quote .quote-image img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote .quote-author {
+  font-style: normal;
+  font-size: 0.95rem;
+}
+
+.quote .quote-author strong {
+  display: block;
+  font-weight: 600;
+}
+
+/* Centered variant */
+.quote.centered blockquote {
+  text-align: center;
+  border-left: none;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.quote.centered .quote-footer {
+  justify-content: center;
+}
+
+/* Large variant */
+.quote.large .quote-text {
+  font-size: 1.75rem;
+}
+
+/* Highlight variant */
+.quote.highlight blockquote {
+  background-color: var(--link-color, #035fe6);
+  color: #fff;
+  border-left-color: #fff;
+}
+
+.quote.highlight .quote-text {
+  color: #fff;
+}
+
+.quote.highlight .quote-text::before {
+  color: rgb(255 255 255 / 70%);
+}
+
+.quote.highlight .quote-author {
+  color: rgb(255 255 255 / 90%);
+}
+
+/* No background variant */
+.quote.minimal blockquote {
+  background: none;
+  padding: 0;
+  padding-left: 24px;
+}

@@ -773,5 +773,403 @@
         "valueType": "boolean"
       }
     ]
+  },
+  {
+    "id": "quote",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "quote",
+        "label": "Quote Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "author",
+        "label": "Author Name",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "authorImage",
+        "label": "Author Image",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "cta",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "content",
+        "label": "Content",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          { "name": "Centered", "value": "centered" },
+          { "name": "Dark", "value": "dark" },
+          { "name": "Light", "value": "light" },
+          { "name": "Full Width", "value": "full-width" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "testimonial-item",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "quote",
+        "label": "Testimonial Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "author",
+        "label": "Author Name",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Author Photo",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "banner",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "content",
+        "label": "Content",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Action Link"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          { "name": "Warning", "value": "warning" },
+          { "name": "Error", "value": "error" },
+          { "name": "Success", "value": "success" },
+          { "name": "Info", "value": "info" },
+          { "name": "Dismissible", "value": "dismissible" },
+          { "name": "Sticky", "value": "sticky" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gallery-item",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "caption",
+        "label": "Caption",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "counter-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "value",
+        "label": "Value (e.g., 100+, $50K)",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "label",
+        "label": "Label",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "icon",
+        "label": "Icon",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "timeline-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "date",
+        "label": "Date/Time",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "content",
+        "label": "Content",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "faq-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "question",
+        "label": "Question",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "answer",
+        "label": "Answer",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "pricing-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Plan Name",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "price",
+        "label": "Price (e.g., $29/mo)",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "features",
+        "label": "Features List",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "CTA Link"
+      }
+    ]
+  },
+  {
+    "id": "team-member",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Photo",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "name",
+        "label": "Name",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "role",
+        "label": "Role/Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "bio",
+        "label": "Bio",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "social",
+        "label": "Social Links",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "feature-item",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "icon",
+        "label": "Icon/Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link"
+      }
+    ]
+  },
+  {
+    "id": "alert",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "content",
+        "label": "Alert Content",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Type",
+        "options": [
+          { "name": "Info", "value": "info" },
+          { "name": "Success", "value": "success" },
+          { "name": "Warning", "value": "warning" },
+          { "name": "Error", "value": "error" },
+          { "name": "Dismissible", "value": "dismissible" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "social-share",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "platforms",
+        "label": "Platforms",
+        "options": [
+          { "name": "Facebook", "value": "facebook" },
+          { "name": "Twitter/X", "value": "twitter" },
+          { "name": "LinkedIn", "value": "linkedin" },
+          { "name": "WhatsApp", "value": "whatsapp" },
+          { "name": "Email", "value": "email" },
+          { "name": "Copy Link", "value": "copy" }
+        ]
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          { "name": "Colored", "value": "colored" },
+          { "name": "Outlined", "value": "outlined" },
+          { "name": "No Label", "value": "no-label" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "divider",
+    "fields": [
+      {
+        "component": "text",
+        "name": "text",
+        "label": "Divider Text (optional)",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          { "name": "Thick", "value": "thick" },
+          { "name": "Dashed", "value": "dashed" },
+          { "name": "Dotted", "value": "dotted" },
+          { "name": "Colored", "value": "colored" },
+          { "name": "Gradient", "value": "gradient" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "newsletter",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "action",
+        "label": "Form Action URL",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          { "name": "Inline", "value": "inline" },
+          { "name": "Dark", "value": "dark" },
+          { "name": "Highlight", "value": "highlight" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "progress-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "label",
+        "label": "Label",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "value",
+        "label": "Value (e.g., 75%)",
+        "valueType": "string"
+      }
+    ]
   }
 ]

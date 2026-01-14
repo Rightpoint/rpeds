@@ -24,6 +24,23 @@
       "text",
       "title",
       "video",
+      "quote",
+      "cta",
+      "testimonials",
+      "banner",
+      "gallery",
+      "counter",
+      "timeline",
+      "faq",
+      "pricing",
+      "team",
+      "features",
+      "alert",
+      "social-share",
+      "breadcrumb",
+      "divider",
+      "newsletter",
+      "progress-bar",
       "product-recommendations",
       "product-teaser",
       "product-list-page"
@@ -95,5 +112,59 @@
   {
     "id": "video",
     "components": []
+  },
+  {
+    "id": "testimonials",
+    "components": [
+      "testimonial-item"
+    ]
+  },
+  {
+    "id": "gallery",
+    "components": [
+      "gallery-item"
+    ]
+  },
+  {
+    "id": "counter",
+    "components": [
+      "counter-item"
+    ]
+  },
+  {
+    "id": "timeline",
+    "components": [
+      "timeline-item"
+    ]
+  },
+  {
+    "id": "faq",
+    "components": [
+      "faq-item"
+    ]
+  },
+  {
+    "id": "pricing",
+    "components": [
+      "pricing-item"
+    ]
+  },
+  {
+    "id": "team",
+    "components": [
+      "team-member"
+    ]
+  },
+  {
+    "id": "features",
+    "components": [
+      "feature-item"
+    ]
+  },
+  {
+    "id": "progress-bar",
+    "components": [
+      "progress-item"
+    ]
   }
 ]

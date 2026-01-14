@@ -1,0 +1,71 @@
+.tabs .tabs-list {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--border-color, #dadada);
+  overflow-x: auto;
+}
+
+.tabs .tabs-tab {
+  padding: 12px 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color, #333);
+  position: relative;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.tabs .tabs-tab:hover {
+  color: var(--link-hover-color, #000);
+}
+
+.tabs .tabs-tab-active {
+  color: var(--link-color, #035fe6);
+}
+
+.tabs .tabs-tab-active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--link-color, #035fe6);
+}
+
+.tabs .tabs-panel {
+  padding: 24px 0;
+}
+
+.tabs .tabs-panel[hidden] {
+  display: none;
+}
+
+/* Vertical tabs variant */
+.tabs.vertical {
+  display: flex;
+  gap: 24px;
+}
+
+.tabs.vertical .tabs-list {
+  flex-direction: column;
+  border-bottom: none;
+  border-right: 2px solid var(--border-color, #dadada);
+  min-width: 200px;
+}
+
+.tabs.vertical .tabs-tab-active::after {
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: -2px;
+  width: 2px;
+  height: auto;
+}
+
+.tabs.vertical .tabs-content {
+  flex: 1;
+}

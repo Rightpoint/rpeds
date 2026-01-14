@@ -1,0 +1,127 @@
+.counter .counter-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 32px;
+  text-align: center;
+}
+
+.counter .counter-stat {
+  padding: 24px;
+}
+
+.counter .counter-icon {
+  margin-bottom: 16px;
+}
+
+.counter .counter-icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.counter .counter-icon svg {
+  width: 48px;
+  height: 48px;
+  color: var(--link-color, #035fe6);
+}
+
+.counter .counter-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--link-color, #035fe6);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.counter .counter-prefix,
+.counter .counter-suffix {
+  font-size: 2rem;
+}
+
+.counter .counter-label {
+  font-size: 1rem;
+  color: var(--text-color, #666);
+}
+
+/* Bordered variant */
+.counter.bordered .counter-stat {
+  border: 1px solid var(--border-color, #dadada);
+  border-radius: 8px;
+}
+
+/* Background variant */
+.counter.background .counter-stat {
+  background-color: var(--light-color, #f5f5f5);
+  border-radius: 8px;
+}
+
+/* Highlight variant */
+.counter.highlight {
+  background-color: var(--link-color, #035fe6);
+  padding: 48px;
+  border-radius: 8px;
+}
+
+.counter.highlight .counter-value {
+  color: #fff;
+}
+
+.counter.highlight .counter-label {
+  color: rgb(255 255 255 / 80%);
+}
+
+/* Large variant */
+.counter.large .counter-value {
+  font-size: 4rem;
+}
+
+.counter.large .counter-prefix,
+.counter.large .counter-suffix {
+  font-size: 2.5rem;
+}
+
+/* Small variant */
+.counter.small .counter-container {
+  gap: 16px;
+}
+
+.counter.small .counter-stat {
+  padding: 16px;
+}
+
+.counter.small .counter-value {
+  font-size: 2rem;
+}
+
+.counter.small .counter-prefix,
+.counter.small .counter-suffix {
+  font-size: 1.25rem;
+}
+
+/* Vertical layout */
+.counter.vertical .counter-container {
+  grid-template-columns: 1fr;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.counter.vertical .counter-stat {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  text-align: left;
+}
+
+.counter.vertical .counter-icon {
+  margin-bottom: 0;
+}
+
+@media (width <= 600px) {
+  .counter .counter-value {
+    font-size: 2.5rem;
+  }
+
+  .counter .counter-prefix,
+  .counter .counter-suffix {
+    font-size: 1.5rem;
+  }
+}
