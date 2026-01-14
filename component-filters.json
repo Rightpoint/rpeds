@@ -1,0 +1,148 @@
+[
+  {
+    "id": "main",
+    "components": [
+      "section",
+      "commerce-section",
+      "pdp-section",
+      "account-section"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "accordion",
+      "button",
+      "cards",
+      "carousel",
+      "columns",
+      "embed",
+      "fragment",
+      "form",
+      "hero",
+      "image",
+      "quote",
+      "search",
+      "tabs",
+      "table",
+      "text",
+      "title",
+      "video",
+      "product-recommendations",
+      "product-teaser",
+      "product-list-page",
+      "genaiblock"
+    ]
+  },
+  {
+    "id": "account-section",
+    "components": [
+      "commerce-account-sidebar",
+      "commerce-account-header",
+      "commerce-orders-list",
+      "commerce-addresses",
+      "commerce-customer-information",
+      "commerce-returns-list",
+      "commerce-create-return",
+      "commerce-login",
+      "commerce-create-account",
+      "commerce-create-password",
+      "commerce-confirm-account",
+      "commerce-forgot-password",
+      "commerce-return-header",
+      "commerce-order-header",
+      "commerce-order-status",
+      "commerce-shipping-status",
+      "commerce-customer-details",
+      "commerce-order-cost-summary",
+      "commerce-order-product-list",
+      "commerce-order-returns",
+      "commerce-order-returns",
+      "customer-preferences",
+      "genaiblock"
+    ]
+  },
+  {
+    "id": "pdp-section",
+    "components": [
+      "product-details",
+      "enrichment"
+    ]
+  },
+  {
+    "id": "commerce-section",
+    "components": [
+      "commerce-cart",
+      "commerce-mini-cart",
+      "commerce-checkout"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
+    ]
+  },
+  {
+    "id": "cards",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "carousel-item"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "genaiblock"
+    ]
+  },
+  {
+    "id": "table",
+    "components": [
+      "table-row"
+    ]
+  },
+  {
+    "id": "table-2-columns",
+    "components": [
+      "table-col-2"
+    ]
+  },
+  {
+    "id": "table-3-columns",
+    "components": [
+      "table-col-3"
+    ]
+  },
+  {
+    "id": "table-4-columns",
+    "components": [
+      "table-col-4"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tabs-item"
+    ]
+  },
+  {
+    "id": "video",
+    "components": []
+  }
+]
