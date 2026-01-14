@@ -83,7 +83,9 @@
               }
             }
           }
-        },
+        }
+      ]
+    },
     {
       "title": "Blocks",
       "id": "blocks",
