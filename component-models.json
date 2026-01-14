@@ -67,16 +67,6 @@
     ]
   },
   {
-    "id": "genaiblock",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "text",
-        "label": "Text"
-      }
-    ]
-  },
-  {
     "id": "button",
     "fields": [
       {
@@ -356,25 +346,6 @@
         "component": "text",
         "name": "linkText",
         "label": "Text"
-      }
-    ]
-  },
-  {
-    "id": "quote",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "quotation",
-        "value": "",
-        "label": "Quotation"
-      },
-      {
-        "component": "richtext",
-        "name": "attribution",
-        "value": "",
-        "label": "Attribution",
-        "valueType": "string"
       }
     ]
   },

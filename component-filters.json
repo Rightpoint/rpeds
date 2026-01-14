@@ -2,10 +2,7 @@
   {
     "id": "main",
     "components": [
-      "section",
-      "commerce-section",
-      "pdp-section",
-      "account-section"
+      "section"
     ]
   },
   {
@@ -21,7 +18,6 @@
       "form",
       "hero",
       "image",
-      "quote",
       "search",
       "tabs",
       "table",
@@ -30,51 +26,7 @@
       "video",
       "product-recommendations",
       "product-teaser",
-      "product-list-page",
-      "genaiblock"
-    ]
-  },
-  {
-    "id": "account-section",
-    "components": [
-      "commerce-account-sidebar",
-      "commerce-account-header",
-      "commerce-orders-list",
-      "commerce-addresses",
-      "commerce-customer-information",
-      "commerce-returns-list",
-      "commerce-create-return",
-      "commerce-login",
-      "commerce-create-account",
-      "commerce-create-password",
-      "commerce-confirm-account",
-      "commerce-forgot-password",
-      "commerce-return-header",
-      "commerce-order-header",
-      "commerce-order-status",
-      "commerce-shipping-status",
-      "commerce-customer-details",
-      "commerce-order-cost-summary",
-      "commerce-order-product-list",
-      "commerce-order-returns",
-      "commerce-order-returns",
-      "customer-preferences",
-      "genaiblock"
-    ]
-  },
-  {
-    "id": "pdp-section",
-    "components": [
-      "product-details",
-      "enrichment"
-    ]
-  },
-  {
-    "id": "commerce-section",
-    "components": [
-      "commerce-cart",
-      "commerce-mini-cart",
-      "commerce-checkout"
+      "product-list-page"
     ]
   },
   {
@@ -107,9 +59,8 @@
       "text",
       "image",
       "button",
-      "title",
-      "genaiblock"
-    ]
+      "title"
+        ]
   },
   {
     "id": "table",
