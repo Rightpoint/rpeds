@@ -524,6 +524,40 @@
     ]
   },
   {
+    "id": "tabs",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Layout",
+            "children": [
+              { "name": "Vertical", "value": "vertical" }
+            ]
+          },
+          {
+            "name": "Theme",
+            "children": [
+              { "name": "Dark", "value": "dark" },
+              { "name": "Light", "value": "light" },
+              { "name": "Bordered", "value": "bordered" }
+            ]
+          },
+          {
+            "name": "Size",
+            "children": [
+              { "name": "Compact", "value": "compact" },
+              { "name": "Large", "value": "large" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "tabs-item",
     "fields": [
       {
