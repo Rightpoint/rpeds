@@ -7,12 +7,13 @@ export default function decorate(block) {
   tabContent.className = 'tabs-content';
 
   [...block.children].forEach((item, index) => {
-    const tabNameDiv = item.children[0];
-    const contentDiv = item.children[1];
+    const children = [...item.children];
+    const tabNameDiv = children[0];
+    const contentDivs = children.slice(1);
 
     const tabName = tabNameDiv?.textContent?.trim() || `Tab ${index + 1}`;
-    const tabId = `tab-${index}`;
-    const panelId = `panel-${index}`;
+    const tabId = `tab-${block.id || 'tabs'}-${index}`;
+    const panelId = `panel-${block.id || 'tabs'}-${index}`;
 
     // Create tab button
     const tab = document.createElement('button');
@@ -33,9 +34,17 @@ export default function decorate(block) {
     panel.setAttribute('aria-labelledby', tabId);
     panel.setAttribute('id', panelId);
     panel.hidden = index !== 0;
-    if (contentDiv) {
-      panel.innerHTML = contentDiv.innerHTML;
-    }
+
+    // Append all content divs to the panel
+    contentDivs.forEach((contentDiv) => {
+      if (contentDiv) {
+        // Move the content (preserves nested blocks/components)
+        while (contentDiv.firstChild) {
+          panel.append(contentDiv.firstChild);
+        }
+      }
+    });
+
     tabContent.append(panel);
   });
 

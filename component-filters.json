@@ -110,6 +110,15 @@
     ]
   },
   {
+    "id": "tabs-item",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
     "id": "video",
     "components": []
   },
