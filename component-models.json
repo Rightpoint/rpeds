@@ -1164,5 +1164,63 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "stat-block",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Layout",
+            "children": [
+              { "name": "Square (2x2)", "value": "square" },
+              { "name": "Three Columns", "value": "three-columns" }
+            ]
+          },
+          {
+            "name": "Theme",
+            "children": [
+              { "name": "Dark", "value": "dark" },
+              { "name": "Light", "value": "light" },
+              { "name": "Brand Color", "value": "brand" },
+              { "name": "Bordered", "value": "bordered" }
+            ]
+          },
+          {
+            "name": "Size",
+            "children": [
+              { "name": "Large Text", "value": "large" },
+              { "name": "Compact", "value": "compact" }
+            ]
+          },
+          {
+            "name": "Animation",
+            "children": [
+              { "name": "No Animation", "value": "no-animation" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "stat-block-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "value",
+        "label": "Value (e.g., 800+, $51mn, 60 NPS)",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "label",
+        "label": "Label",
+        "valueType": "string"
+      }
+    ]
   }
 ]

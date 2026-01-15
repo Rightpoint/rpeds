@@ -1,0 +1,169 @@
+/* Stat Block - Genpact-style statistics display */
+
+.stat-block {
+  --stat-block-bg: #1e1e1e;
+  --stat-block-value-color: #fffaf4;
+  --stat-block-label-color: #e07850;
+  --stat-block-radius: 12px;
+  --stat-block-gap: 20px;
+  --stat-block-item-height: 266px;
+  --stat-block-padding: 20px;
+}
+
+.stat-block .stat-block-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--stat-block-gap);
+}
+
+@media (width >= 600px) {
+  .stat-block .stat-block-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .stat-block .stat-block-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat-block .stat-block-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--stat-block-bg);
+  border-radius: var(--stat-block-radius);
+  min-height: var(--stat-block-item-height);
+  padding: var(--stat-block-padding);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-block .stat-block-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+}
+
+.stat-block .stat-block-value {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 700;
+  color: var(--stat-block-value-color);
+  line-height: 1.1;
+  margin-bottom: 12px;
+  font-family: var(--heading-font-family, sans-serif);
+}
+
+.stat-block .stat-block-prefix,
+.stat-block .stat-block-suffix {
+  font-size: 0.7em;
+}
+
+.stat-block .stat-block-label {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: 600;
+  color: var(--stat-block-label-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
+  max-width: 200px;
+}
+
+/* Animation on scroll */
+.stat-block .stat-block-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stat-block.animate .stat-block-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stat-block.animate .stat-block-item:nth-child(1) { transition-delay: 0s; }
+.stat-block.animate .stat-block-item:nth-child(2) { transition-delay: 0.1s; }
+.stat-block.animate .stat-block-item:nth-child(3) { transition-delay: 0.2s; }
+.stat-block.animate .stat-block-item:nth-child(4) { transition-delay: 0.3s; }
+.stat-block.animate .stat-block-item:nth-child(5) { transition-delay: 0.4s; }
+.stat-block.animate .stat-block-item:nth-child(6) { transition-delay: 0.5s; }
+.stat-block.animate .stat-block-item:nth-child(7) { transition-delay: 0.6s; }
+.stat-block.animate .stat-block-item:nth-child(8) { transition-delay: 0.7s; }
+
+/* Square variant - 2x2 grid */
+.stat-block.square .stat-block-container {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (width >= 600px) {
+  .stat-block.square .stat-block-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Three column variant */
+.stat-block.three-columns .stat-block-container {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (width >= 600px) {
+  .stat-block.three-columns .stat-block-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .stat-block.three-columns .stat-block-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Light theme variant */
+.stat-block.light {
+  --stat-block-bg: #f5f5f5;
+  --stat-block-value-color: #1e1e1e;
+  --stat-block-label-color: #e07850;
+}
+
+/* Dark theme variant (default Genpact style) */
+.stat-block.dark {
+  --stat-block-bg: #1e1e1e;
+  --stat-block-value-color: #fffaf4;
+  --stat-block-label-color: #e07850;
+}
+
+/* Brand color variant */
+.stat-block.brand {
+  --stat-block-bg: var(--link-color, #3b63fb);
+  --stat-block-value-color: #fff;
+  --stat-block-label-color: rgb(255 255 255 / 80%);
+}
+
+/* Bordered variant */
+.stat-block.bordered .stat-block-item {
+  background-color: transparent;
+  border: 2px solid var(--stat-block-bg);
+}
+
+/* Large text variant */
+.stat-block.large .stat-block-value {
+  font-size: clamp(4rem, 10vw, 6rem);
+}
+
+/* Compact variant */
+.stat-block.compact .stat-block-item {
+  min-height: 180px;
+  padding: 16px;
+}
+
+.stat-block.compact .stat-block-value {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+/* No animation variant */
+.stat-block.no-animation .stat-block-item {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}

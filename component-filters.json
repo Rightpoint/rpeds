@@ -43,7 +43,8 @@
       "progress-bar",
       "product-recommendations",
       "product-teaser",
-      "product-list-page"
+      "product-list-page",
+      "stat-block"
     ]
   },
   {
@@ -174,6 +175,12 @@
     "id": "progress-bar",
     "components": [
       "progress-item"
+    ]
+  },
+  {
+    "id": "stat-block",
+    "components": [
+      "stat-block-item"
     ]
   }
 ]
