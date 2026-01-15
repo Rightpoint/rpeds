@@ -1,12 +1,12 @@
 .features .features-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
+  gap: var(--spacing-2xl);
 }
 
 .features .feature-item {
   text-align: center;
-  padding: 24px;
+  padding: var(--spacing-xl);
 }
 
 .features .feature-icon {
@@ -16,9 +16,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--light-color, #f5f5f5);
-  border-radius: 12px;
-  color: var(--link-color, #035fe6);
+  background-color: var(--light-color);
+  border-radius: var(--radius-lg);
+  color: var(--link-color);
   font-size: 2rem;
 }
 
@@ -29,13 +29,13 @@
 }
 
 .features .feature-title {
-  margin: 0 0 12px;
+  margin: 0 0 var(--spacing-md);
   font-size: 1.25rem;
-  color: var(--text-color, #333);
+  color: var(--text-color);
 }
 
 .features .feature-description {
-  color: var(--text-color, #666);
+  color: var(--text-color);
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -45,11 +45,11 @@
 }
 
 .features .feature-link {
-  margin-top: 16px;
+  margin-top: var(--spacing-lg);
 }
 
 .features .feature-link-text {
-  color: var(--link-color, #035fe6);
+  color: var(--link-color);
   font-weight: 500;
   text-decoration: none;
 }
@@ -77,25 +77,25 @@
 /* Cards variant */
 .features.cards .feature-item {
   background-color: var(--background-color, #fff);
-  border: 1px solid var(--border-color, #dadada);
-  border-radius: 12px;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  transition: box-shadow var(--transition-fast), transform var(--transition-fast);
 }
 
 .features.cards .feature-item:hover {
-  box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
+  box-shadow: var(--shadow-lg);
   transform: translateY(-4px);
 }
 
 /* Highlight icon variant */
 .features.highlight .feature-icon {
-  background-color: var(--link-color, #035fe6);
+  background-color: var(--link-color);
   color: #fff;
 }
 
 /* Circle icon variant */
 .features.circle .feature-icon {
-  border-radius: 50%;
+  border-radius: var(--radius-full);
 }
 
 /* Large icons variant */
@@ -125,14 +125,14 @@
 /* Horizontal layout variant */
 .features.horizontal .features-container {
   grid-template-columns: 1fr;
-  gap: 24px;
+  gap: var(--spacing-xl);
 }
 
 .features.horizontal .feature-item {
   display: flex;
   align-items: center;
   text-align: left;
-  gap: 24px;
+  gap: var(--spacing-xl);
 }
 
 .features.horizontal .feature-icon {

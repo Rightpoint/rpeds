@@ -1,27 +1,27 @@
 .pricing .pricing-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  gap: var(--spacing-xl);
   align-items: start;
 }
 
 .pricing .pricing-card {
   background-color: var(--background-color, #fff);
-  border: 1px solid var(--border-color, #dadada);
-  border-radius: 12px;
-  padding: 32px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .pricing .pricing-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
+  box-shadow: var(--shadow-lg);
 }
 
 .pricing .pricing-card-featured {
-  border-color: var(--link-color, #035fe6);
+  border-color: var(--link-color);
   border-width: 2px;
   position: relative;
   transform: scale(1.05);
@@ -33,50 +33,50 @@
 
 .pricing .pricing-header {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: var(--spacing-xl);
 }
 
 .pricing .pricing-badge {
   display: inline-block;
-  background-color: var(--link-color, #035fe6);
+  background-color: var(--link-color);
   color: #fff;
-  padding: 4px 12px;
+  padding: var(--spacing-xs) var(--spacing-md);
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: var(--spacing-sm);
 }
 
 .pricing .pricing-title {
   margin: 0;
   font-size: 1.25rem;
-  color: var(--text-color, #333);
+  color: var(--text-color);
 }
 
 .pricing .pricing-price-wrapper {
   text-align: center;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--border-color, #dadada);
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .pricing .pricing-currency {
   font-size: 1.5rem;
   vertical-align: top;
-  color: var(--text-color, #333);
+  color: var(--text-color);
 }
 
 .pricing .pricing-amount {
   font-size: 3.5rem;
   font-weight: 700;
-  color: var(--text-color, #333);
+  color: var(--text-color);
   line-height: 1;
 }
 
 .pricing .pricing-period {
   font-size: 1rem;
-  color: var(--text-color, #666);
+  color: var(--text-color);
 }
 
 .pricing .pricing-features {
@@ -84,21 +84,21 @@
   margin: 0;
   padding: 0;
   flex-grow: 1;
-  margin-bottom: 24px;
+  margin-bottom: var(--spacing-xl);
 }
 
 .pricing .pricing-feature {
-  padding: 8px 0;
+  padding: var(--spacing-sm) 0;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--spacing-sm);
   font-size: 0.95rem;
-  color: var(--text-color, #666);
+  color: var(--text-color);
 }
 
 .pricing .pricing-feature::before {
   content: '\2713';
-  color: var(--link-color, #035fe6);
+  color: var(--link-color);
   font-weight: 700;
   flex-shrink: 0;
 }
@@ -110,25 +110,25 @@
 .pricing .pricing-button {
   display: inline-block;
   width: 100%;
-  padding: 14px 24px;
-  background-color: var(--link-color, #035fe6);
+  padding: 14px var(--spacing-xl);
+  background-color: var(--link-color);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color var(--transition-fast);
 }
 
 .pricing .pricing-button:hover {
-  background-color: var(--link-hover-color, #024bb5);
+  background-color: var(--link-hover-color);
 }
 
 /* Featured card has different button style */
 .pricing .pricing-card-featured .pricing-button {
-  background: linear-gradient(135deg, var(--link-color, #035fe6) 0%, #6610f2 100%);
+  background: linear-gradient(135deg, var(--link-color) 0%, #6610f2 100%);
 }
 
 /* Horizontal variant */
@@ -139,7 +139,7 @@
 .pricing.horizontal .pricing-card {
   flex-direction: row;
   align-items: center;
-  gap: 32px;
+  gap: var(--spacing-2xl);
 }
 
 .pricing.horizontal .pricing-header {
@@ -150,9 +150,9 @@
 
 .pricing.horizontal .pricing-price-wrapper {
   border-bottom: none;
-  border-right: 1px solid var(--border-color, #dadada);
+  border-right: 1px solid var(--border-color);
   padding-bottom: 0;
-  padding-right: 32px;
+  padding-right: var(--spacing-2xl);
   margin-bottom: 0;
   min-width: 150px;
 }
@@ -160,7 +160,7 @@
 .pricing.horizontal .pricing-features {
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0 24px;
+  gap: 0 var(--spacing-xl);
   margin-bottom: 0;
 }
 
@@ -174,7 +174,7 @@
 
 /* Compact variant */
 .pricing.compact .pricing-card {
-  padding: 24px;
+  padding: var(--spacing-xl);
 }
 
 .pricing.compact .pricing-amount {
@@ -201,9 +201,9 @@
 
   .pricing.horizontal .pricing-price-wrapper {
     border-right: none;
-    border-bottom: 1px solid var(--border-color, #dadada);
+    border-bottom: 1px solid var(--border-color);
     padding-right: 0;
-    padding-bottom: 24px;
-    margin-bottom: 24px;
+    padding-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
   }
 }

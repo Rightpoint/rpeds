@@ -1,7 +1,7 @@
 .team .team-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 32px;
+  gap: var(--spacing-2xl);
 }
 
 .team .team-member {
@@ -9,39 +9,39 @@
 }
 
 .team .team-photo {
-  margin-bottom: 16px;
+  margin-bottom: var(--spacing-lg);
   line-height: 0;
 }
 
 .team .team-photo img {
   width: 180px;
   height: 180px;
-  border-radius: 50%;
+  border-radius: var(--radius-full);
   object-fit: cover;
   margin: 0 auto;
 }
 
 .team .team-info {
-  padding: 0 16px;
+  padding: 0 var(--spacing-lg);
 }
 
 .team .team-name {
-  margin: 0 0 4px;
+  margin: 0 0 var(--spacing-xs);
   font-size: 1.25rem;
-  color: var(--text-color, #333);
+  color: var(--text-color);
 }
 
 .team .team-role {
-  margin: 0 0 12px;
+  margin: 0 0 var(--spacing-md);
   font-size: 0.95rem;
-  color: var(--link-color, #035fe6);
+  color: var(--link-color);
   font-weight: 500;
 }
 
 .team .team-bio {
   font-size: 0.9rem;
-  color: var(--text-color, #666);
-  margin-bottom: 16px;
+  color: var(--text-color);
+  margin-bottom: var(--spacing-lg);
 }
 
 .team .team-bio p {
@@ -51,7 +51,7 @@
 .team .team-social {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: var(--spacing-md);
 }
 
 .team .team-social-link {
@@ -60,14 +60,14 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  border-radius: 50%;
-  background-color: var(--light-color, #f5f5f5);
-  color: var(--text-color, #666);
-  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: var(--radius-full);
+  background-color: var(--light-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
 }
 
 .team .team-social-link:hover {
-  background-color: var(--link-color, #035fe6);
+  background-color: var(--link-color);
   color: #fff;
 }
 
@@ -79,14 +79,14 @@
 /* Card variant */
 .team.cards .team-member {
   background-color: var(--background-color, #fff);
-  border: 1px solid var(--border-color, #dadada);
-  border-radius: 12px;
-  padding: 32px;
-  transition: box-shadow 0.2s ease;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  transition: box-shadow var(--transition-fast);
 }
 
 .team.cards .team-member:hover {
-  box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
+  box-shadow: var(--shadow-lg);
 }
 
 .team.cards .team-photo img {
@@ -97,14 +97,14 @@
 /* Horizontal variant */
 .team.horizontal .team-container {
   grid-template-columns: 1fr;
-  gap: 24px;
+  gap: var(--spacing-xl);
 }
 
 .team.horizontal .team-member {
   display: flex;
   align-items: center;
   text-align: left;
-  gap: 24px;
+  gap: var(--spacing-xl);
 }
 
 .team.horizontal .team-photo {
@@ -127,7 +127,7 @@
 
 /* Square photos variant */
 .team.square .team-photo img {
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   width: 100%;
   height: auto;
   aspect-ratio: 1;
@@ -146,7 +146,7 @@
 /* Compact variant */
 .team.compact .team-container {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
+  gap: var(--spacing-lg);
 }
 
 .team.compact .team-photo img {

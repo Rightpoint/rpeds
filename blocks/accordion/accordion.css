@@ -1,12 +1,12 @@
 .accordion details {
-  border: 1px solid var(--border-color, #dadada);
-  border-radius: 4px;
-  margin-bottom: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-sm);
   overflow: hidden;
 }
 
 .accordion summary {
-  padding: 16px;
+  padding: var(--spacing-lg);
   font-weight: 600;
   cursor: pointer;
   background-color: var(--background-color, #fff);
@@ -24,7 +24,7 @@
   content: '+';
   font-size: 1.5rem;
   font-weight: 400;
-  transition: transform 0.2s ease;
+  transition: transform var(--transition-fast);
 }
 
 .accordion details[open] summary::after {
@@ -32,11 +32,11 @@
 }
 
 .accordion .accordion-content {
-  padding: 16px;
-  border-top: 1px solid var(--border-color, #dadada);
-  background-color: var(--light-color, #f5f5f5);
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--border-color);
+  background-color: var(--light-color);
 }
 
 .accordion details[open] {
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  box-shadow: var(--shadow-sm);
 }
