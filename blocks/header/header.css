@@ -82,13 +82,12 @@ header .header-wrapper {
 
 /* Main Header */
 .main-header {
-  background-color: var(--genpact-white);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: var(--background-color);
 }
 
 /* Nav Wrapper */
 header .nav-wrapper {
-  background-color: var(--genpact-white);
+  background-color: var(--background-color);
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
@@ -115,7 +114,7 @@ header nav[aria-expanded='true'] {
     'tools tools' auto / auto 1fr;
   overflow-y: auto;
   min-height: 100dvh;
-  background-color: var(--genpact-white);
+  background-color: var(--background-color);
 }
 
 @media (width >= 900px) {
@@ -158,7 +157,7 @@ header nav .nav-hamburger button {
   border-radius: 0;
   padding: 0;
   background-color: transparent;
-  color: var(--genpact-dark);
+  color: var(--text-color);
   overflow: initial;
   text-overflow: initial;
   white-space: initial;
@@ -268,7 +267,7 @@ header nav .nav-menu {
 
 header nav .nav-menu > li {
   font-weight: 500;
-  color: var(--genpact-text);
+  color: var(--text-color);
 }
 
 header nav .nav-menu > li > p {
@@ -345,9 +344,10 @@ header nav .nav-submenu > li {
     width: 240px;
     top: calc(100% + 16px);
     padding: 20px;
-    background-color: var(--genpact-white);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    background-color: var(--background-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     white-space: initial;
     z-index: 10;
   }
@@ -365,12 +365,12 @@ header nav .nav-submenu > li {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--genpact-white);
+    border-bottom: 8px solid var(--background-color);
   }
 
   header nav .nav-submenu > li {
     padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   header nav .nav-submenu > li:last-child {
@@ -378,7 +378,7 @@ header nav .nav-submenu > li {
   }
 
   header nav .nav-submenu > li a {
-    color: var(--genpact-text);
+    color: var(--text-color);
     transition: color 0.2s ease;
   }
 
@@ -405,7 +405,7 @@ header nav .nav-tools {
   border: none;
   cursor: pointer;
   padding: 8px;
-  color: var(--genpact-text);
+  color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -420,8 +420,9 @@ header nav .nav-tools {
   position: absolute;
   top: 100%;
   right: 0;
-  background: var(--genpact-white);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  background: var(--background-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 16px;
   margin-top: 8px;
@@ -441,11 +442,17 @@ header nav .nav-tools {
 .nav-search .search-form input {
   width: 280px;
   padding: 12px 16px;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 24px;
   font-size: 14px;
   outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
   transition: border-color 0.2s ease;
+}
+
+.nav-search .search-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-search .search-form input:focus {
@@ -480,7 +487,7 @@ header nav .nav-tools {
   border: none;
   cursor: pointer;
   padding: 8px 12px;
-  color: var(--genpact-text);
+  color: var(--text-color);
   display: flex;
   align-items: center;
   gap: 6px;
@@ -505,8 +512,9 @@ header nav .nav-tools {
   position: absolute;
   top: 100%;
   right: 0;
-  background: var(--genpact-white);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  background: var(--background-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 8px 0;
   margin-top: 8px;
@@ -527,7 +535,7 @@ header nav .nav-tools {
 .nav-region .region-dropdown ul li a {
   display: block;
   padding: 10px 20px;
-  color: var(--genpact-text);
+  color: var(--text-color);
   text-decoration: none;
   font-size: 14px;
   text-transform: uppercase;
@@ -535,7 +543,7 @@ header nav .nav-tools {
 }
 
 .nav-region .region-dropdown ul li a:hover {
-  background-color: #f5f5f5;
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--genpact-coral);
 }
 
@@ -594,7 +602,7 @@ header nav .nav-tools {
     width: 100%;
     justify-content: flex-start;
     padding: 12px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .nav-search .search-form {
