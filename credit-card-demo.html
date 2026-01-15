@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Component Demo</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      color: #2c2c2c;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 32px;
+    }
+
+    .instructions {
+      background: #e8f4fd;
+      border-left: 4px solid #0265dc;
+      padding: 16px;
+      margin-bottom: 32px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .instructions h3 {
+      margin: 0 0 8px;
+      color: #0265dc;
+    }
+
+    .instructions ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .instructions li {
+      margin: 4px 0;
+    }
+
+    .instructions code {
+      background: #d4e8f9;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    /* Section styling */
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .default-content-wrapper {
+      margin-bottom: 20px;
+    }
+
+    .credit-card-wrapper {
+      background: white;
+      border-radius: 12px;
+      padding: 8px;
+    }
+  </style>
+  <link rel="stylesheet" href="/blocks/credit-card/credit-card.css">
+</head>
+<body>
+  <h1>Credit Card Custom Component</h1>
+  <p class="subtitle">AEM Forms Custom Component with Subscribe Pattern</p>
+
+  <div class="instructions">
+    <h3>Debugging Instructions</h3>
+    <ul>
+      <li>Open browser DevTools (F12) and go to the <strong>Console</strong> tab</li>
+      <li>All subscribe events and model changes are logged with <code>[CreditCard]</code>, <code>[Subscribe]</code>, and <code>[FieldModel]</code> prefixes</li>
+      <li>Use the <strong>Debug Controls</strong> below to test the subscribe pattern:
+        <ul>
+          <li><strong>Add New Card</strong> - Triggers an <code>enum</code> change event</li>
+          <li><strong>Clear Selection</strong> - Triggers a <code>value</code> change event</li>
+          <li><strong>Log Current State</strong> - Outputs the current field model state</li>
+        </ul>
+      </li>
+      <li>Select a card to see the <code>value</code> change in the console</li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="section">
+      <div class="default-content-wrapper">
+        <h2>Select Payment Method</h2>
+        <p>Choose the credit card you want to use for this transaction.</p>
+      </div>
+      <div class="credit-card-wrapper">
+        <div class="credit-card block" data-block-name="credit-card">
+          <!-- Block content - will be parsed and converted to card options -->
+          <!-- If empty, default demo cards will be shown -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module">
+    import decorate from '/blocks/credit-card/credit-card.js';
+
+    // Decorate the credit-card block
+    const creditCardBlock = document.querySelector('.credit-card.block');
+    if (creditCardBlock) {
+      decorate(creditCardBlock);
+    }
+
+    // Log that demo is ready
+    console.log('%c Credit Card Demo Ready ', 'background: #0265dc; color: white; padding: 4px 8px; border-radius: 4px;');
+    console.log('Open the Console to see subscribe pattern events.');
+  </script>
+</body>
+</html>

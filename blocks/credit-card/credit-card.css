@@ -1,0 +1,154 @@
+/* Credit Card Custom Component Styles */
+
+.credit-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 24px;
+}
+
+.credit-card .radio-wrapper {
+  min-width: 280px;
+  max-width: 340px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+  flex: 0 0 auto;
+  padding: 20px;
+  position: relative;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.credit-card .radio-wrapper:hover {
+  box-shadow: 0 4px 16px rgb(0 0 0 / 15%);
+  transform: translateY(-2px);
+}
+
+.credit-card .radio-wrapper:has(input:checked) {
+  border-color: #0265dc;
+  box-shadow: 0 4px 16px rgb(2 101 220 / 25%);
+}
+
+.credit-card .radio-wrapper input[type="radio"] {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: #0265dc;
+}
+
+.credit-card .radio-wrapper label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c2c2c;
+  padding-right: 32px;
+  cursor: pointer;
+}
+
+.credit-card .card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.credit-card .card-number {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: #666;
+  letter-spacing: 2px;
+}
+
+.credit-card .card-expiry {
+  font-size: 12px;
+  color: #888;
+}
+
+.credit-card .card-image {
+  width: 60px;
+  height: auto;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.credit-card .card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Debug Controls */
+.credit-card .credit-card-debug {
+  width: 100%;
+  margin-top: 24px;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 1px dashed #ccc;
+}
+
+.credit-card .credit-card-debug h4 {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.credit-card .credit-card-debug button {
+  display: inline-block;
+  margin: 4px 8px 4px 0;
+  padding: 8px 16px;
+  background: #0265dc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.credit-card .credit-card-debug button:hover {
+  background: #0554b8;
+}
+
+.credit-card .credit-card-debug button:active {
+  background: #044494;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .credit-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .credit-card .radio-wrapper {
+    max-width: none;
+    min-width: auto;
+  }
+}
+
+/* Animation for new cards */
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.credit-card .radio-wrapper {
+  animation: cardSlideIn 0.3s ease-out;
+}
