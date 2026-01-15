@@ -21,6 +21,59 @@
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
+  /* daylight palette (light/warm tones) */
+  --color-daylight-000: #fff;
+  --color-daylight-100: #fffaf4;
+  --color-daylight-200: #fff2df;
+  --color-daylight-300: #ffe8c4;
+  --color-daylight-400: #f4e2c8;
+  --color-daylight-500: #ffdeaa;
+  --color-daylight-600: #ffd490;
+  --color-daylight-700: #ffca76;
+  --color-daylight-800: #ffc05c;
+  --color-daylight-900: #ffb642;
+  --color-daylight-950: #ffad28;
+
+  /* evening palette (dark tones) */
+  --color-evening-000: #c0c0c0;
+  --color-evening-100: #6d706b;
+  --color-evening-200: #4a4a4a;
+  --color-evening-300: #333;
+  --color-evening-400: #303030;
+  --color-evening-500: #272727;
+  --color-evening-600: #212121;
+  --color-evening-700: #242220;
+  --color-evening-800: #161916;
+
+  /* coral palette (brand accent) */
+  --color-coral-000: #ffedee;
+  --color-coral-100: #ffdcde;
+  --color-coral-200: #ffb9bd;
+  --color-coral-300: #ff959b;
+  --color-coral-400: #ff727a;
+  --color-coral-500: #ff4f59;
+  --color-coral-600: #e43e47;
+  --color-coral-700: #cc3f47;
+  --color-coral-800: #992f35;
+  --color-coral-900: #662024;
+  --color-coral-950: #331012;
+
+  /* semantic surface colors */
+  --color-surface-primary: var(--color-evening-800);
+  --color-surface-secondary: var(--color-evening-500);
+  --color-surface-tertiary: var(--color-evening-600);
+  --color-surface-quaternary: var(--color-evening-400);
+  --color-surface-quinary: var(--color-daylight-000);
+  --color-surface-brand-primary: var(--color-coral-500);
+  --color-surface-brand-secondary: var(--color-daylight-950);
+
+  /* semantic content colors */
+  --color-content-primary: var(--color-daylight-100);
+  --color-content-secondary: var(--color-daylight-000);
+  --color-content-tertiary: var(--color-daylight-200);
+  --color-content-quaternary: var(--color-evening-800);
+  --color-content-brand-primary: var(--color-coral-500);
+
   /* fonts */
   --body-font-family: 'Funnel Sans', funnel-sans-fallback, sans-serif;
   --heading-font-family: 'Funnel Sans', funnel-sans-fallback, sans-serif;
@@ -250,4 +303,183 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+/* background color classes for sections and containers */
+
+/* daylight backgrounds (light themes - use dark text) */
+main .section.bg-daylight-000,
+main .section.bg-morning-white {
+  background-color: var(--color-daylight-000);
+  color: var(--color-evening-800);
+}
+
+main .section.bg-daylight-100,
+main .section.bg-sunrise-white {
+  background-color: var(--color-daylight-100);
+  color: var(--color-evening-800);
+}
+
+main .section.bg-daylight-200,
+main .section.bg-sunrise-cream {
+  background-color: var(--color-daylight-200);
+  color: var(--color-evening-800);
+}
+
+main .section.bg-daylight-950,
+main .section.bg-sunrise-gold {
+  background-color: var(--color-daylight-950);
+  color: var(--color-evening-800);
+}
+
+/* evening backgrounds (dark themes - use light text) */
+main .section.bg-evening-500 {
+  background-color: var(--color-evening-500);
+  color: var(--color-daylight-100);
+}
+
+main .section.bg-evening-600 {
+  background-color: var(--color-evening-600);
+  color: var(--color-daylight-100);
+}
+
+main .section.bg-evening-700 {
+  background-color: var(--color-evening-700);
+  color: var(--color-daylight-100);
+}
+
+main .section.bg-evening-800,
+main .section.bg-midnight {
+  background-color: var(--color-evening-800);
+  color: var(--color-daylight-100);
+}
+
+/* coral backgrounds (brand accent) */
+main .section.bg-coral-500,
+main .section.bg-coral {
+  background-color: var(--color-coral-500);
+  color: var(--color-daylight-000);
+}
+
+main .section.bg-coral-600 {
+  background-color: var(--color-coral-600);
+  color: var(--color-daylight-000);
+}
+
+main .section.bg-coral-700 {
+  background-color: var(--color-coral-700);
+  color: var(--color-daylight-000);
+}
+
+/* semantic surface backgrounds */
+main .section.bg-surface-primary {
+  background-color: var(--color-surface-primary);
+  color: var(--color-content-primary);
+}
+
+main .section.bg-surface-secondary {
+  background-color: var(--color-surface-secondary);
+  color: var(--color-content-primary);
+}
+
+main .section.bg-surface-tertiary {
+  background-color: var(--color-surface-tertiary);
+  color: var(--color-content-primary);
+}
+
+main .section.bg-surface-brand-primary {
+  background-color: var(--color-surface-brand-primary);
+  color: var(--color-daylight-000);
+}
+
+main .section.bg-surface-brand-secondary {
+  background-color: var(--color-surface-brand-secondary);
+  color: var(--color-evening-800);
+}
+
+/* block-level background colors (hero, tabs, cta, banner, stat-block, etc.) */
+.block.bg-daylight-000,
+.block.bg-morning-white {
+  background-color: var(--color-daylight-000);
+  color: var(--color-evening-800);
+}
+
+.block.bg-daylight-100,
+.block.bg-sunrise-white {
+  background-color: var(--color-daylight-100);
+  color: var(--color-evening-800);
+}
+
+.block.bg-daylight-200,
+.block.bg-sunrise-cream {
+  background-color: var(--color-daylight-200);
+  color: var(--color-evening-800);
+}
+
+.block.bg-daylight-950,
+.block.bg-sunrise-gold {
+  background-color: var(--color-daylight-950);
+  color: var(--color-evening-800);
+}
+
+.block.bg-evening-500 {
+  background-color: var(--color-evening-500);
+  color: var(--color-daylight-100);
+}
+
+.block.bg-evening-600 {
+  background-color: var(--color-evening-600);
+  color: var(--color-daylight-100);
+}
+
+.block.bg-evening-700 {
+  background-color: var(--color-evening-700);
+  color: var(--color-daylight-100);
+}
+
+.block.bg-evening-800,
+.block.bg-midnight {
+  background-color: var(--color-evening-800);
+  color: var(--color-daylight-100);
+}
+
+.block.bg-coral-500,
+.block.bg-coral {
+  background-color: var(--color-coral-500);
+  color: var(--color-daylight-000);
+}
+
+.block.bg-coral-600 {
+  background-color: var(--color-coral-600);
+  color: var(--color-daylight-000);
+}
+
+.block.bg-coral-700 {
+  background-color: var(--color-coral-700);
+  color: var(--color-daylight-000);
+}
+
+.block.bg-surface-primary {
+  background-color: var(--color-surface-primary);
+  color: var(--color-content-primary);
+}
+
+.block.bg-surface-secondary {
+  background-color: var(--color-surface-secondary);
+  color: var(--color-content-primary);
+}
+
+.block.bg-surface-tertiary {
+  background-color: var(--color-surface-tertiary);
+  color: var(--color-content-primary);
+}
+
+.block.bg-surface-brand-primary {
+  background-color: var(--color-surface-brand-primary);
+  color: var(--color-daylight-000);
+}
+
+.block.bg-surface-brand-secondary {
+  background-color: var(--color-surface-brand-secondary);
+  color: var(--color-evening-800);
 }
