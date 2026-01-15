@@ -1,37 +1,350 @@
+/* Hero Block - Genpact-inspired styling */
+
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
 }
 
 .hero {
+  --hero-content-flex: 0 1 40%;
+  --hero-asset-flex: 0 1 60%;
+  --hero-gap: 48px;
+  --hero-padding: 20px;
+  --image-border-radius: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--hero-gap);
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
-}
-
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.hero img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 @media (width >= 900px) {
   .hero {
-    padding: 40px 32px;
+    flex-direction: row;
+    gap: 20px;
+    --hero-padding: 40px;
   }
+}
+
+@media (width >= 1200px) {
+  .hero {
+    --hero-padding: 60px;
+    --image-border-radius: 24px;
+  }
+}
+
+/* Hero Content Section */
+.hero > div:first-child {
+  flex: var(--hero-content-flex);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+@media (width >= 768px) {
+  .hero > div:first-child {
+    flex-direction: row;
+  }
+}
+
+/* Hero Asset Section */
+.hero > div:last-child {
+  flex: var(--hero-asset-flex);
+}
+
+.hero > div:last-child picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero > div:last-child img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--image-border-radius);
+}
+
+/* Pretitle */
+.hero .pretitle,
+.hero p:first-child:not(:last-child) {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #00d4aa;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.hero h1,
+.hero h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+@media (width >= 768px) {
+  .hero h1,
+  .hero h2 {
+    font-size: 44px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (width >= 1200px) {
+  .hero h1,
+  .hero h2 {
+    font-size: 55px;
+  }
+}
+
+/* Title underline accent */
+.hero h1::after,
+.hero h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #00d4aa 0%, transparent 100%);
+  margin-top: 16px;
+}
+
+@media (width >= 768px) {
+  .hero h1::after,
+  .hero h2::after {
+    margin-top: 20px;
+  }
+}
+
+/* Description */
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+@media (width >= 900px) {
+  .hero p {
+    font-size: 20px;
+  }
+}
+
+/* Action Container / CTA Buttons */
+.hero .button-container {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+
+.hero a.button {
+  text-align: center;
+  white-space: nowrap;
+  min-width: fit-content;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+/* Primary button style */
+.hero a.button:first-child {
+  background-color: transparent;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.hero a.button:first-child:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+/* Secondary button style */
+.hero a.button.secondary,
+.hero a.button:nth-child(2) {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  text-decoration: underline;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero a.button.secondary:hover,
+.hero a.button:nth-child(2):hover {
+  opacity: 0.8;
+}
+
+/* Homepage Hero Variant */
+.hero.homepage {
+  display: block;
+  position: relative;
+  margin: 0 calc(var(--hero-padding) * -1);
+  aspect-ratio: var(--aspect-ratio, 16/9);
+}
+
+.hero.homepage > div:first-child {
+  position: absolute;
+  z-index: 2;
+  padding-top: 40px;
+  padding-left: var(--hero-padding);
+  gap: 40px;
+  flex-direction: column;
+}
+
+@media (width >= 768px) {
+  .hero.homepage > div:first-child {
+    padding-top: 64px;
+    right: 20%;
+  }
+}
+
+@media (width >= 1200px) {
+  .hero.homepage > div:first-child {
+    padding-top: 76px;
+    right: 40%;
+  }
+}
+
+/* Homepage hero wayfinder element */
+.hero.homepage > div:first-child::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  position: relative;
+}
+
+.hero.homepage > div:first-child::after {
+  margin-top: 40px;
+}
+
+@media (width >= 768px) {
+  .hero.homepage > div:first-child::after {
+    margin-top: 60px;
+  }
+}
+
+/* Homepage title adjustments */
+.hero.homepage h1,
+.hero.homepage h2 {
+  font-size: 44px;
+  margin-bottom: 0;
+}
+
+@media (width >= 768px) {
+  .hero.homepage h1,
+  .hero.homepage h2 {
+    font-size: 55px;
+  }
+}
+
+@media (width >= 1200px) {
+  .hero.homepage h1,
+  .hero.homepage h2 {
+    font-size: 72px;
+  }
+}
+
+.hero.homepage h1::after,
+.hero.homepage h2::after {
+  display: none;
+}
+
+/* Homepage asset full bleed */
+.hero.homepage > div:last-child {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero.homepage > div:last-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+@media (width >= 768px) {
+  .hero.homepage > div:last-child img {
+    width: auto;
+    height: 90vh;
+    max-height: 1000px;
+  }
+}
+
+@media (width >= 1200px) {
+  .hero.homepage > div:last-child img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Video wrapper support */
+.hero .video-wrapper {
+  flex: var(--hero-asset-flex);
+}
+
+.hero .video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--image-border-radius);
+}
+
+.hero .video-caption {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+  line-height: 20px;
+  margin-top: 24px;
+}
+
+/* Title size variants */
+.hero.title-size-m h1,
+.hero.title-size-m h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+@media (width >= 768px) {
+  .hero.title-size-m h1,
+  .hero.title-size-m h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+
+.hero.title-size-m h1::after,
+.hero.title-size-m h2::after {
+  margin-top: 16px;
+}
+
+@media (width >= 768px) {
+  .hero.title-size-m h1::after,
+  .hero.title-size-m h2::after {
+    margin-top: 20px;
+  }
+}
+
+.hero.title-size-s h1,
+.hero.title-size-s h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.hero.title-size-s h1::after,
+.hero.title-size-s h2::after {
+  margin-top: 16px;
 }
