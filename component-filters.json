@@ -185,6 +185,10 @@
     ]
   },
   {
+    "id": "stat-block-item",
+    "components": []
+  },
+  {
     "id": "hero-carousel",
     "components": [
       "hero-carousel-item"
