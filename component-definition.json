@@ -1283,9 +1283,10 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Stat Block Item",
-                  "model": "stat-block-item"
+                 "template": {
+                  "name": "Tab",
+                  "model": "stat-block-item",
+                  "tabName": "Tab Name"
                 }
               }
             }

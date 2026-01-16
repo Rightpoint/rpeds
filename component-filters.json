@@ -190,7 +190,9 @@
   },
   {
     "id": "stat-block-item",
-    "components": []
+    "components": [
+      "text"
+    ]
   },
   {
     "id": "hero-carousel",

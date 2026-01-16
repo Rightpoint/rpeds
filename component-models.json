@@ -1796,19 +1796,12 @@
   {
     "id": "stat-block-item",
     "fields": [
-      {
+            {
         "component": "text",
-        "name": "value",
-        "label": "Value (e.g., 800+, $51mn, 60 NPS)",
         "valueType": "string",
-        "value": "A Value"
-      },
-      {
-        "component": "text",
-        "name": "label",
-        "label": "Label",
-        "valueType": "string",
-        "value": "A Label"
+        "name": "tabName",
+        "value": "",
+        "label": "Tab Name"
       }
     ]
   },
