@@ -403,7 +403,8 @@
                   "name": "Tab",
                   "model": "tabs-item",
                   "filter": "tabs-item",
-                  "tabName": "Tab Name"
+                  "tabName": "Tab Name",
+                  "content": "<p>Lorem Ipsum</p>"
                 }
               }
             }
