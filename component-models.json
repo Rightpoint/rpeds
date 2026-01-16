@@ -136,37 +136,85 @@
           {
             "name": "Daylight",
             "children": [
-              { "name": "Morning White", "value": "bg-morning-white" },
-              { "name": "Sunrise White", "value": "bg-sunrise-white" },
-              { "name": "Sunrise Cream", "value": "bg-sunrise-cream" },
-              { "name": "Sunrise Gold", "value": "bg-sunrise-gold" }
+              {
+                "name": "Morning White",
+                "value": "bg-morning-white"
+              },
+              {
+                "name": "Sunrise White",
+                "value": "bg-sunrise-white"
+              },
+              {
+                "name": "Sunrise Cream",
+                "value": "bg-sunrise-cream"
+              },
+              {
+                "name": "Sunrise Gold",
+                "value": "bg-sunrise-gold"
+              }
             ]
           },
           {
             "name": "Evening",
             "children": [
-              { "name": "Evening 500", "value": "bg-evening-500" },
-              { "name": "Evening 600", "value": "bg-evening-600" },
-              { "name": "Evening 700", "value": "bg-evening-700" },
-              { "name": "Midnight", "value": "bg-midnight" }
+              {
+                "name": "Evening 500",
+                "value": "bg-evening-500"
+              },
+              {
+                "name": "Evening 600",
+                "value": "bg-evening-600"
+              },
+              {
+                "name": "Evening 700",
+                "value": "bg-evening-700"
+              },
+              {
+                "name": "Midnight",
+                "value": "bg-midnight"
+              }
             ]
           },
           {
             "name": "Coral",
             "children": [
-              { "name": "Coral", "value": "bg-coral" },
-              { "name": "Coral 600", "value": "bg-coral-600" },
-              { "name": "Coral 700", "value": "bg-coral-700" }
+              {
+                "name": "Coral",
+                "value": "bg-coral"
+              },
+              {
+                "name": "Coral 600",
+                "value": "bg-coral-600"
+              },
+              {
+                "name": "Coral 700",
+                "value": "bg-coral-700"
+              }
             ]
           },
           {
             "name": "Surface",
             "children": [
-              { "name": "Primary", "value": "bg-surface-primary" },
-              { "name": "Secondary", "value": "bg-surface-secondary" },
-              { "name": "Tertiary", "value": "bg-surface-tertiary" },
-              { "name": "Brand Primary", "value": "bg-surface-brand-primary" },
-              { "name": "Brand Secondary", "value": "bg-surface-brand-secondary" }
+              {
+                "name": "Primary",
+                "value": "bg-surface-primary"
+              },
+              {
+                "name": "Secondary",
+                "value": "bg-surface-secondary"
+              },
+              {
+                "name": "Tertiary",
+                "value": "bg-surface-tertiary"
+              },
+              {
+                "name": "Brand Primary",
+                "value": "bg-surface-brand-primary"
+              },
+              {
+                "name": "Brand Secondary",
+                "value": "bg-surface-brand-secondary"
+              }
             ]
           }
         ]
@@ -340,29 +388,83 @@
           {
             "name": "Layout",
             "children": [
-              { "name": "Hero Banner", "value": "hero-banner" },
-              { "name": "Text Left", "value": "text-left" },
-              { "name": "Text Right", "value": "text-right" },
-              { "name": "50/50 Text Left", "value": "left-50" },
-              { "name": "50/50 Text Right", "value": "right-50" }
+              {
+                "name": "Hero Banner",
+                "value": "hero-banner"
+              },
+              {
+                "name": "Text Left",
+                "value": "text-left"
+              },
+              {
+                "name": "Text Right",
+                "value": "text-right"
+              },
+              {
+                "name": "50/50 Text Left",
+                "value": "left-50"
+              },
+              {
+                "name": "50/50 Text Right",
+                "value": "right-50"
+              }
             ]
           },
           {
             "name": "Background",
             "children": [
-              { "name": "Morning White", "value": "bg-morning-white" },
-              { "name": "Sunrise White", "value": "bg-sunrise-white" },
-              { "name": "Sunrise Cream", "value": "bg-sunrise-cream" },
-              { "name": "Sunrise Gold", "value": "bg-sunrise-gold" },
-              { "name": "Evening 500", "value": "bg-evening-500" },
-              { "name": "Evening 600", "value": "bg-evening-600" },
-              { "name": "Midnight", "value": "bg-midnight" },
-              { "name": "Coral", "value": "bg-coral" },
-              { "name": "Coral 600", "value": "bg-coral-600" },
-              { "name": "Surface Primary", "value": "bg-surface-primary" },
-              { "name": "Surface Secondary", "value": "bg-surface-secondary" },
-              { "name": "Brand Primary", "value": "bg-surface-brand-primary" },
-              { "name": "Brand Secondary", "value": "bg-surface-brand-secondary" }
+              {
+                "name": "Morning White",
+                "value": "bg-morning-white"
+              },
+              {
+                "name": "Sunrise White",
+                "value": "bg-sunrise-white"
+              },
+              {
+                "name": "Sunrise Cream",
+                "value": "bg-sunrise-cream"
+              },
+              {
+                "name": "Sunrise Gold",
+                "value": "bg-sunrise-gold"
+              },
+              {
+                "name": "Evening 500",
+                "value": "bg-evening-500"
+              },
+              {
+                "name": "Evening 600",
+                "value": "bg-evening-600"
+              },
+              {
+                "name": "Midnight",
+                "value": "bg-midnight"
+              },
+              {
+                "name": "Coral",
+                "value": "bg-coral"
+              },
+              {
+                "name": "Coral 600",
+                "value": "bg-coral-600"
+              },
+              {
+                "name": "Surface Primary",
+                "value": "bg-surface-primary"
+              },
+              {
+                "name": "Surface Secondary",
+                "value": "bg-surface-secondary"
+              },
+              {
+                "name": "Brand Primary",
+                "value": "bg-surface-brand-primary"
+              },
+              {
+                "name": "Brand Secondary",
+                "value": "bg-surface-brand-secondary"
+              }
             ]
           }
         ]
@@ -591,47 +693,104 @@
           {
             "name": "Layout",
             "children": [
-              { "name": "Vertical", "value": "vertical" }
+              {
+                "name": "Vertical",
+                "value": "vertical"
+              }
             ]
           },
           {
             "name": "Theme",
             "children": [
-              { "name": "Dark", "value": "dark" },
-              { "name": "Light", "value": "light" },
-              { "name": "Bordered", "value": "bordered" }
+              {
+                "name": "Dark",
+                "value": "dark"
+              },
+              {
+                "name": "Light",
+                "value": "light"
+              },
+              {
+                "name": "Bordered",
+                "value": "bordered"
+              }
             ]
           },
           {
             "name": "Size",
             "children": [
-              { "name": "Compact", "value": "compact" },
-              { "name": "Large", "value": "large" }
+              {
+                "name": "Compact",
+                "value": "compact"
+              },
+              {
+                "name": "Large",
+                "value": "large"
+              }
             ]
           },
           {
             "name": "Background",
             "children": [
-              { "name": "Morning White", "value": "bg-morning-white" },
-              { "name": "Sunrise White", "value": "bg-sunrise-white" },
-              { "name": "Sunrise Cream", "value": "bg-sunrise-cream" },
-              { "name": "Sunrise Gold", "value": "bg-sunrise-gold" },
-              { "name": "Evening 500", "value": "bg-evening-500" },
-              { "name": "Evening 600", "value": "bg-evening-600" },
-              { "name": "Midnight", "value": "bg-midnight" },
-              { "name": "Coral", "value": "bg-coral" },
-              { "name": "Coral 600", "value": "bg-coral-600" },
-              { "name": "Surface Primary", "value": "bg-surface-primary" },
-              { "name": "Surface Secondary", "value": "bg-surface-secondary" },
-              { "name": "Brand Primary", "value": "bg-surface-brand-primary" },
-              { "name": "Brand Secondary", "value": "bg-surface-brand-secondary" }
+              {
+                "name": "Morning White",
+                "value": "bg-morning-white"
+              },
+              {
+                "name": "Sunrise White",
+                "value": "bg-sunrise-white"
+              },
+              {
+                "name": "Sunrise Cream",
+                "value": "bg-sunrise-cream"
+              },
+              {
+                "name": "Sunrise Gold",
+                "value": "bg-sunrise-gold"
+              },
+              {
+                "name": "Evening 500",
+                "value": "bg-evening-500"
+              },
+              {
+                "name": "Evening 600",
+                "value": "bg-evening-600"
+              },
+              {
+                "name": "Midnight",
+                "value": "bg-midnight"
+              },
+              {
+                "name": "Coral",
+                "value": "bg-coral"
+              },
+              {
+                "name": "Coral 600",
+                "value": "bg-coral-600"
+              },
+              {
+                "name": "Surface Primary",
+                "value": "bg-surface-primary"
+              },
+              {
+                "name": "Surface Secondary",
+                "value": "bg-surface-secondary"
+              },
+              {
+                "name": "Brand Primary",
+                "value": "bg-surface-brand-primary"
+              },
+              {
+                "name": "Brand Secondary",
+                "value": "bg-surface-brand-secondary"
+              }
             ]
           }
         ]
       }
     ]
   },
-{
+  {
     "id": "tabs-item",
     "fields": [
       {
@@ -733,8 +892,7 @@
   },
   {
     "id": "product-details",
-    "fields": [
-    ]
+    "fields": []
   },
   {
     "id": "enrichment",
@@ -928,33 +1086,84 @@
           {
             "name": "Layout",
             "children": [
-              { "name": "Centered", "value": "centered" },
-              { "name": "Full Width", "value": "full-width" }
+              {
+                "name": "Centered",
+                "value": "centered"
+              },
+              {
+                "name": "Full Width",
+                "value": "full-width"
+              }
             ]
           },
           {
             "name": "Theme",
             "children": [
-              { "name": "Dark", "value": "dark" },
-              { "name": "Light", "value": "light" }
+              {
+                "name": "Dark",
+                "value": "dark"
+              },
+              {
+                "name": "Light",
+                "value": "light"
+              }
             ]
           },
           {
             "name": "Background",
             "children": [
-              { "name": "Morning White", "value": "bg-morning-white" },
-              { "name": "Sunrise White", "value": "bg-sunrise-white" },
-              { "name": "Sunrise Cream", "value": "bg-sunrise-cream" },
-              { "name": "Sunrise Gold", "value": "bg-sunrise-gold" },
-              { "name": "Evening 500", "value": "bg-evening-500" },
-              { "name": "Evening 600", "value": "bg-evening-600" },
-              { "name": "Midnight", "value": "bg-midnight" },
-              { "name": "Coral", "value": "bg-coral" },
-              { "name": "Coral 600", "value": "bg-coral-600" },
-              { "name": "Surface Primary", "value": "bg-surface-primary" },
-              { "name": "Surface Secondary", "value": "bg-surface-secondary" },
-              { "name": "Brand Primary", "value": "bg-surface-brand-primary" },
-              { "name": "Brand Secondary", "value": "bg-surface-brand-secondary" }
+              {
+                "name": "Morning White",
+                "value": "bg-morning-white"
+              },
+              {
+                "name": "Sunrise White",
+                "value": "bg-sunrise-white"
+              },
+              {
+                "name": "Sunrise Cream",
+                "value": "bg-sunrise-cream"
+              },
+              {
+                "name": "Sunrise Gold",
+                "value": "bg-sunrise-gold"
+              },
+              {
+                "name": "Evening 500",
+                "value": "bg-evening-500"
+              },
+              {
+                "name": "Evening 600",
+                "value": "bg-evening-600"
+              },
+              {
+                "name": "Midnight",
+                "value": "bg-midnight"
+              },
+              {
+                "name": "Coral",
+                "value": "bg-coral"
+              },
+              {
+                "name": "Coral 600",
+                "value": "bg-coral-600"
+              },
+              {
+                "name": "Surface Primary",
+                "value": "bg-surface-primary"
+              },
+              {
+                "name": "Surface Secondary",
+                "value": "bg-surface-secondary"
+              },
+              {
+                "name": "Brand Primary",
+                "value": "bg-surface-brand-primary"
+              },
+              {
+                "name": "Brand Secondary",
+                "value": "bg-surface-brand-secondary"
+              }
             ]
           }
         ]
@@ -1006,35 +1215,92 @@
           {
             "name": "Type",
             "children": [
-              { "name": "Warning", "value": "warning" },
-              { "name": "Error", "value": "error" },
-              { "name": "Success", "value": "success" },
-              { "name": "Info", "value": "info" }
+              {
+                "name": "Warning",
+                "value": "warning"
+              },
+              {
+                "name": "Error",
+                "value": "error"
+              },
+              {
+                "name": "Success",
+                "value": "success"
+              },
+              {
+                "name": "Info",
+                "value": "info"
+              }
             ]
           },
           {
             "name": "Behavior",
             "children": [
-              { "name": "Dismissible", "value": "dismissible" },
-              { "name": "Sticky", "value": "sticky" }
+              {
+                "name": "Dismissible",
+                "value": "dismissible"
+              },
+              {
+                "name": "Sticky",
+                "value": "sticky"
+              }
             ]
           },
           {
             "name": "Background",
             "children": [
-              { "name": "Morning White", "value": "bg-morning-white" },
-              { "name": "Sunrise White", "value": "bg-sunrise-white" },
-              { "name": "Sunrise Cream", "value": "bg-sunrise-cream" },
-              { "name": "Sunrise Gold", "value": "bg-sunrise-gold" },
-              { "name": "Evening 500", "value": "bg-evening-500" },
-              { "name": "Evening 600", "value": "bg-evening-600" },
-              { "name": "Midnight", "value": "bg-midnight" },
-              { "name": "Coral", "value": "bg-coral" },
-              { "name": "Coral 600", "value": "bg-coral-600" },
-              { "name": "Surface Primary", "value": "bg-surface-primary" },
-              { "name": "Surface Secondary", "value": "bg-surface-secondary" },
-              { "name": "Brand Primary", "value": "bg-surface-brand-primary" },
-              { "name": "Brand Secondary", "value": "bg-surface-brand-secondary" }
+              {
+                "name": "Morning White",
+                "value": "bg-morning-white"
+              },
+              {
+                "name": "Sunrise White",
+                "value": "bg-sunrise-white"
+              },
+              {
+                "name": "Sunrise Cream",
+                "value": "bg-sunrise-cream"
+              },
+              {
+                "name": "Sunrise Gold",
+                "value": "bg-sunrise-gold"
+              },
+              {
+                "name": "Evening 500",
+                "value": "bg-evening-500"
+              },
+              {
+                "name": "Evening 600",
+                "value": "bg-evening-600"
+              },
+              {
+                "name": "Midnight",
+                "value": "bg-midnight"
+              },
+              {
+                "name": "Coral",
+                "value": "bg-coral"
+              },
+              {
+                "name": "Coral 600",
+                "value": "bg-coral-600"
+              },
+              {
+                "name": "Surface Primary",
+                "value": "bg-surface-primary"
+              },
+              {
+                "name": "Surface Secondary",
+                "value": "bg-surface-secondary"
+              },
+              {
+                "name": "Brand Primary",
+                "value": "bg-surface-brand-primary"
+              },
+              {
+                "name": "Brand Secondary",
+                "value": "bg-surface-brand-secondary"
+              }
             ]
           }
         ]
@@ -1226,11 +1492,26 @@
         "name": "classes",
         "label": "Type",
         "options": [
-          { "name": "Info", "value": "info" },
-          { "name": "Success", "value": "success" },
-          { "name": "Warning", "value": "warning" },
-          { "name": "Error", "value": "error" },
-          { "name": "Dismissible", "value": "dismissible" }
+          {
+            "name": "Info",
+            "value": "info"
+          },
+          {
+            "name": "Success",
+            "value": "success"
+          },
+          {
+            "name": "Warning",
+            "value": "warning"
+          },
+          {
+            "name": "Error",
+            "value": "error"
+          },
+          {
+            "name": "Dismissible",
+            "value": "dismissible"
+          }
         ]
       }
     ]
@@ -1243,12 +1524,30 @@
         "name": "platforms",
         "label": "Platforms",
         "options": [
-          { "name": "Facebook", "value": "facebook" },
-          { "name": "Twitter/X", "value": "twitter" },
-          { "name": "LinkedIn", "value": "linkedin" },
-          { "name": "WhatsApp", "value": "whatsapp" },
-          { "name": "Email", "value": "email" },
-          { "name": "Copy Link", "value": "copy" }
+          {
+            "name": "Facebook",
+            "value": "facebook"
+          },
+          {
+            "name": "Twitter/X",
+            "value": "twitter"
+          },
+          {
+            "name": "LinkedIn",
+            "value": "linkedin"
+          },
+          {
+            "name": "WhatsApp",
+            "value": "whatsapp"
+          },
+          {
+            "name": "Email",
+            "value": "email"
+          },
+          {
+            "name": "Copy Link",
+            "value": "copy"
+          }
         ]
       },
       {
@@ -1256,9 +1555,18 @@
         "name": "classes",
         "label": "Style",
         "options": [
-          { "name": "Colored", "value": "colored" },
-          { "name": "Outlined", "value": "outlined" },
-          { "name": "No Label", "value": "no-label" }
+          {
+            "name": "Colored",
+            "value": "colored"
+          },
+          {
+            "name": "Outlined",
+            "value": "outlined"
+          },
+          {
+            "name": "No Label",
+            "value": "no-label"
+          }
         ]
       }
     ]
@@ -1277,11 +1585,26 @@
         "name": "classes",
         "label": "Style",
         "options": [
-          { "name": "Thick", "value": "thick" },
-          { "name": "Dashed", "value": "dashed" },
-          { "name": "Dotted", "value": "dotted" },
-          { "name": "Colored", "value": "colored" },
-          { "name": "Gradient", "value": "gradient" }
+          {
+            "name": "Thick",
+            "value": "thick"
+          },
+          {
+            "name": "Dashed",
+            "value": "dashed"
+          },
+          {
+            "name": "Dotted",
+            "value": "dotted"
+          },
+          {
+            "name": "Colored",
+            "value": "colored"
+          },
+          {
+            "name": "Gradient",
+            "value": "gradient"
+          }
         ]
       }
     ]
@@ -1312,9 +1635,18 @@
         "name": "classes",
         "label": "Style",
         "options": [
-          { "name": "Inline", "value": "inline" },
-          { "name": "Dark", "value": "dark" },
-          { "name": "Highlight", "value": "highlight" }
+          {
+            "name": "Inline",
+            "value": "inline"
+          },
+          {
+            "name": "Dark",
+            "value": "dark"
+          },
+          {
+            "name": "Highlight",
+            "value": "highlight"
+          }
         ]
       }
     ]
@@ -1347,73 +1679,118 @@
           {
             "name": "Layout",
             "children": [
-              { "name": "Square (2x2)", "value": "square" },
-              { "name": "Three Columns", "value": "three-columns" }
+              {
+                "name": "Square (2x2)",
+                "value": "square"
+              },
+              {
+                "name": "Three Columns",
+                "value": "three-columns"
+              }
             ]
           },
           {
             "name": "Theme",
             "children": [
-              { "name": "Dark", "value": "dark" },
-              { "name": "Light", "value": "light" },
-              { "name": "Brand Color", "value": "brand" },
-              { "name": "Bordered", "value": "bordered" }
+              {
+                "name": "Dark",
+                "value": "dark"
+              },
+              {
+                "name": "Light",
+                "value": "light"
+              },
+              {
+                "name": "Brand Color",
+                "value": "brand"
+              },
+              {
+                "name": "Bordered",
+                "value": "bordered"
+              }
             ]
           },
           {
             "name": "Size",
             "children": [
-              { "name": "Large Text", "value": "large" },
-              { "name": "Compact", "value": "compact" }
+              {
+                "name": "Large Text",
+                "value": "large"
+              },
+              {
+                "name": "Compact",
+                "value": "compact"
+              }
             ]
           },
           {
             "name": "Animation",
             "children": [
-              { "name": "No Animation", "value": "no-animation" }
+              {
+                "name": "No Animation",
+                "value": "no-animation"
+              }
             ]
           },
           {
             "name": "Background",
             "children": [
-              { "name": "Morning White", "value": "bg-morning-white" },
-              { "name": "Sunrise White", "value": "bg-sunrise-white" },
-              { "name": "Sunrise Cream", "value": "bg-sunrise-cream" },
-              { "name": "Sunrise Gold", "value": "bg-sunrise-gold" },
-              { "name": "Evening 500", "value": "bg-evening-500" },
-              { "name": "Evening 600", "value": "bg-evening-600" },
-              { "name": "Midnight", "value": "bg-midnight" },
-              { "name": "Coral", "value": "bg-coral" },
-              { "name": "Coral 600", "value": "bg-coral-600" },
-              { "name": "Surface Primary", "value": "bg-surface-primary" },
-              { "name": "Surface Secondary", "value": "bg-surface-secondary" },
-              { "name": "Brand Primary", "value": "bg-surface-brand-primary" },
-              { "name": "Brand Secondary", "value": "bg-surface-brand-secondary" }
+              {
+                "name": "Morning White",
+                "value": "bg-morning-white"
+              },
+              {
+                "name": "Sunrise White",
+                "value": "bg-sunrise-white"
+              },
+              {
+                "name": "Sunrise Cream",
+                "value": "bg-sunrise-cream"
+              },
+              {
+                "name": "Sunrise Gold",
+                "value": "bg-sunrise-gold"
+              },
+              {
+                "name": "Evening 500",
+                "value": "bg-evening-500"
+              },
+              {
+                "name": "Evening 600",
+                "value": "bg-evening-600"
+              },
+              {
+                "name": "Midnight",
+                "value": "bg-midnight"
+              },
+              {
+                "name": "Coral",
+                "value": "bg-coral"
+              },
+              {
+                "name": "Coral 600",
+                "value": "bg-coral-600"
+              },
+              {
+                "name": "Surface Primary",
+                "value": "bg-surface-primary"
+              },
+              {
+                "name": "Surface Secondary",
+                "value": "bg-surface-secondary"
+              },
+              {
+                "name": "Brand Primary",
+                "value": "bg-surface-brand-primary"
+              },
+              {
+                "name": "Brand Secondary",
+                "value": "bg-surface-brand-secondary"
+              }
             ]
           }
         ]
-      },
-      {
-      "component": "container",
-      "label": "Container",
-      "name": "container",
-      "valueType": "string",
-      "collapsible": true,
-      "fields": [
-        {
-          "component": "text-input",
-          "label": "Simple Text 1",
-          "name": "text",
-          "valueType": "string"
-        },
-        {
-          "component": "text-input",
-          "label": "Simple Text 2",
-          "name": "text2",
-          "valueType": "string"
-        }
-      ]
-    }
+      }
     ]
   },
   {
@@ -1444,25 +1821,67 @@
           {
             "name": "Autoplay",
             "children": [
-              { "name": "Autoplay", "value": "autoplay" }
+              {
+                "name": "Autoplay",
+                "value": "autoplay"
+              }
             ]
           },
           {
             "name": "Background",
             "children": [
-              { "name": "Morning White", "value": "bg-morning-white" },
-              { "name": "Sunrise White", "value": "bg-sunrise-white" },
-              { "name": "Sunrise Cream", "value": "bg-sunrise-cream" },
-              { "name": "Sunrise Gold", "value": "bg-sunrise-gold" },
-              { "name": "Evening 500", "value": "bg-evening-500" },
-              { "name": "Evening 600", "value": "bg-evening-600" },
-              { "name": "Midnight", "value": "bg-midnight" },
-              { "name": "Coral", "value": "bg-coral" },
-              { "name": "Coral 600", "value": "bg-coral-600" },
-              { "name": "Surface Primary", "value": "bg-surface-primary" },
-              { "name": "Surface Secondary", "value": "bg-surface-secondary" },
-              { "name": "Brand Primary", "value": "bg-surface-brand-primary" },
-              { "name": "Brand Secondary", "value": "bg-surface-brand-secondary" }
+              {
+                "name": "Morning White",
+                "value": "bg-morning-white"
+              },
+              {
+                "name": "Sunrise White",
+                "value": "bg-sunrise-white"
+              },
+              {
+                "name": "Sunrise Cream",
+                "value": "bg-sunrise-cream"
+              },
+              {
+                "name": "Sunrise Gold",
+                "value": "bg-sunrise-gold"
+              },
+              {
+                "name": "Evening 500",
+                "value": "bg-evening-500"
+              },
+              {
+                "name": "Evening 600",
+                "value": "bg-evening-600"
+              },
+              {
+                "name": "Midnight",
+                "value": "bg-midnight"
+              },
+              {
+                "name": "Coral",
+                "value": "bg-coral"
+              },
+              {
+                "name": "Coral 600",
+                "value": "bg-coral-600"
+              },
+              {
+                "name": "Surface Primary",
+                "value": "bg-surface-primary"
+              },
+              {
+                "name": "Surface Secondary",
+                "value": "bg-surface-secondary"
+              },
+              {
+                "name": "Brand Primary",
+                "value": "bg-surface-brand-primary"
+              },
+              {
+                "name": "Brand Secondary",
+                "value": "bg-surface-brand-secondary"
+              }
             ]
           }
         ]
