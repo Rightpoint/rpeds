@@ -79,7 +79,7 @@
       "image",
       "button",
       "title"
-        ]
+    ]
   },
   {
     "id": "table",
@@ -186,7 +186,12 @@
   },
   {
     "id": "stat-block-item",
-    "components": []
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
   },
   {
     "id": "hero-carousel",
