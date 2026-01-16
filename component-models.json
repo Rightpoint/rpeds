@@ -631,7 +631,7 @@
       }
     ]
   },
-  {
+{
     "id": "tabs-item",
     "fields": [
       {
@@ -640,6 +640,13 @@
         "name": "tabName",
         "value": "",
         "label": "Tab Name"
+      },
+      {
+        "component": "richtext",
+        "name": "content",
+        "value": "",
+        "label": "Content",
+        "valueType": "string"
       }
     ]
   },
