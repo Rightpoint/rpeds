@@ -1800,13 +1800,15 @@
         "component": "text",
         "name": "value",
         "label": "Value (e.g., 800+, $51mn, 60 NPS)",
-        "valueType": "string"
+        "valueType": "string",
+        "value": "A Value"
       },
       {
         "component": "text",
         "name": "label",
         "label": "Label",
-        "valueType": "string"
+        "valueType": "string",
+        "value": "A Label"
       }
     ]
   },
