@@ -55,6 +55,10 @@
     ]
   },
   {
+    "id": "accordion-item",
+    "components": []
+  },
+  {
     "id": "cards",
     "components": [
       "card"
@@ -186,12 +190,7 @@
   },
   {
     "id": "stat-block-item",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
-    ]
+    "components": []
   },
   {
     "id": "hero-carousel",
