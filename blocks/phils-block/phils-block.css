@@ -1,0 +1,55 @@
+/* Phil's Block - Styled like Genpact cmp-teaser */
+.phils-block {
+  background-color: #1a1a1a;
+  padding: var(--spacing-xl, 40px);
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.phils-block-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md, 16px);
+}
+
+.phils-block-pretitle {
+  display: inline-block;
+  background-color: #fff;
+  color: #1a1a1a;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+.phils-block-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  font-family: var(--heading-font-family, sans-serif);
+}
+
+.phils-block-description {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.phils-block-read-more {
+  color: #ff6b6b;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.phils-block-read-more:hover {
+  color: #ff8a8a;
+}
