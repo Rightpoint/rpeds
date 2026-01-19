@@ -201,7 +201,8 @@
   {
     "id": "stat-block",
     "components": [
-      "stat-block-item"
+      "stat-block-item",
+      "twhite-tabs-item"
     ]
   },
   {
