@@ -100,5 +100,5 @@ export default function decorate(block) {
  // block.textContent = '';
   block.append(container);
 
-  observer.observe(block);
+//  observer.observe(block);
 }
