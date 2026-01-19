@@ -1,7 +1,29 @@
+function animateValue(element, target, duration = 2000) {
+  const start = 0;
+  const startTime = performance.now();
+
+  function update(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+
+    // Easing function (ease-out cubic)
+    const easeProgress = 1 - (1 - progress) ** 3;
+    const current = Math.floor(start + (target - start) * easeProgress);
+
+    element.textContent = current.toLocaleString();
+
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    } else {
+      element.textContent = target.toLocaleString();
+    }
+  }
+
+  requestAnimationFrame(update);
+}
 
 export default function decorate(block) {
- console.log("Begin rendering Stat Block");
-   const items = [...block.children];
+  const items = [...block.children];
   const container = document.createElement('div');
   container.className = 'stat-block-container';
 
@@ -14,7 +36,7 @@ export default function decorate(block) {
     const valueDiv = item.children[0];
     const labelDiv = item.children[1];
 
-      // Parse value - look for numbers with optional prefix/suffix (e.g., "$51mn", "800+", "60 NPS")
+    // Parse value - look for numbers with optional prefix/suffix (e.g., "$51mn", "800+", "60 NPS")
     const valueText = valueDiv?.textContent?.trim() || 'H';
 
     // Match patterns like: $51mn, 800+, 60 NPS, 83k+
@@ -29,7 +51,7 @@ export default function decorate(block) {
     const valueWrapper = document.createElement('div');
     valueWrapper.className = 'stat-block-value';
 
-      if (prefix) {
+    if (prefix) {
       const prefixSpan = document.createElement('span');
       prefixSpan.className = 'stat-block-prefix';
       prefixSpan.textContent = prefix;
@@ -60,8 +82,23 @@ export default function decorate(block) {
 
     container.append(stat);
     animatedElements.push({ element: number, target: targetValue });
-  
-    
-  })
-  console.log("After render stat block 2")
+  });
+
+  // Intersection Observer for animation trigger
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        block.classList.add('animate');
+        animatedElements.forEach(({ element, target }) => {
+          animateValue(element, target);
+        });
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  block.textContent = '';
+  block.append(container);
+
+  observer.observe(block);
 }
