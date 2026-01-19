@@ -37,7 +37,7 @@ export default function decorate(block) {
     const labelDiv = item.children[1];
 
     // Parse value - look for numbers with optional prefix/suffix (e.g., "$51mn", "800+", "60 NPS")
-    const valueText = valueDiv?.textContent?.trim() || '0';
+    const valueText = valueDiv?.textContent?.trim() || 'H';
 
     // Match patterns like: $51mn, 800+, 60 NPS, 83k+
     const match = valueText.match(/^([^\d]*)(\d+(?:,\d+)*)(.*)$/);
