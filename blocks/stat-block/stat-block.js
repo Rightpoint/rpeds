@@ -97,7 +97,7 @@ export default function decorate(block) {
     });
   }, { threshold: 0.3 });
 
- // block.textContent = '';
+  block.textContent = '';
   block.append(container);
 
 //  observer.observe(block);
