@@ -810,6 +810,134 @@
     ]
   },
   {
+    "id": "twhite-tabs",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Layout",
+            "children": [
+              {
+                "name": "Vertical",
+                "value": "vertical"
+              }
+            ]
+          },
+          {
+            "name": "Theme",
+            "children": [
+              {
+                "name": "Dark",
+                "value": "dark"
+              },
+              {
+                "name": "Light",
+                "value": "light"
+              },
+              {
+                "name": "Bordered",
+                "value": "bordered"
+              }
+            ]
+          },
+          {
+            "name": "Size",
+            "children": [
+              {
+                "name": "Compact",
+                "value": "compact"
+              },
+              {
+                "name": "Large",
+                "value": "large"
+              }
+            ]
+          },
+          {
+            "name": "Background",
+            "children": [
+              {
+                "name": "Morning White",
+                "value": "bg-morning-white"
+              },
+              {
+                "name": "Sunrise White",
+                "value": "bg-sunrise-white"
+              },
+              {
+                "name": "Sunrise Cream",
+                "value": "bg-sunrise-cream"
+              },
+              {
+                "name": "Sunrise Gold",
+                "value": "bg-sunrise-gold"
+              },
+              {
+                "name": "Evening 500",
+                "value": "bg-evening-500"
+              },
+              {
+                "name": "Evening 600",
+                "value": "bg-evening-600"
+              },
+              {
+                "name": "Midnight",
+                "value": "bg-midnight"
+              },
+              {
+                "name": "Coral",
+                "value": "bg-coral"
+              },
+              {
+                "name": "Coral 600",
+                "value": "bg-coral-600"
+              },
+              {
+                "name": "Surface Primary",
+                "value": "bg-surface-primary"
+              },
+              {
+                "name": "Surface Secondary",
+                "value": "bg-surface-secondary"
+              },
+              {
+                "name": "Brand Primary",
+                "value": "bg-surface-brand-primary"
+              },
+              {
+                "name": "Brand Secondary",
+                "value": "bg-surface-brand-secondary"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "twhite-tabs-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tabName",
+        "value": "",
+        "label": "Tab Name"
+      },
+      {
+        "component": "richtext",
+        "name": "content",
+        "value": "",
+        "label": "Content",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "video",
     "fields": [
       {

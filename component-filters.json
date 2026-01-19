@@ -45,7 +45,8 @@
       "product-teaser",
       "product-list-page",
       "stat-block",
-      "hero-carousel"
+      "hero-carousel",
+      "twhite-tabs"
     ]
   },
   {
@@ -117,6 +118,21 @@
   },
   {
     "id": "tabs-item",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
+    "id": "twhite-tabs",
+    "components": [
+      "twhite-tabs-item"
+    ]
+  },
+  {
+    "id": "twhite-tabs-item",
     "components": [
       "text",
       "image",

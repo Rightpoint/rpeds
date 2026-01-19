@@ -410,6 +410,39 @@
           }
         },
         {
+          "title": "TWhite Tabs",
+          "id": "twhite-tabs",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "TWhite Tabs",
+                  "model": "twhite-tabs",
+                  "filter": "twhite-tabs"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "TWhite Tab",
+          "id": "twhite-tabs-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                  "template": {
+                  "name": "TWhite Tab",
+                  "model": "twhite-tabs-item",
+                  "tabName": "Tab Name",
+                  "content": "<p>Lorem Ipsum</p>"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Video",
           "id": "video",
           "plugins": {
