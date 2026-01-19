@@ -128,7 +128,8 @@
   {
     "id": "twhite-tabs",
     "components": [
-      "twhite-tabs-item"
+      "twhite-tabs-item",
+      "stat-block-item"
     ]
   },
   {
