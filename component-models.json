@@ -2036,5 +2036,24 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "content-fragment",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "fragmentPath",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "description": "Select a content fragment to display its Title and Body content"
+      },
+      {
+        "component": "text",
+        "name": "contentFragmentVariation",
+        "label": "Variation Name",
+        "valueType": "string",
+        "description": "Optional: Enter the name of a specific content fragment variation to display"
+      }
+    ]
   }
 ]

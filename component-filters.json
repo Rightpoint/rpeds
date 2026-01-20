@@ -46,7 +46,8 @@
       "product-list-page",
       "stat-block",
       "hero-carousel",
-      "twhite-tabs"
+      "twhite-tabs",
+      "content-fragment"
     ]
   },
   {
